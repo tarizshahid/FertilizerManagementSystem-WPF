@@ -1,0 +1,47 @@
+﻿<Window x:Class="WpfApplication3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        WindowStyle="ThreeDBorderWindow" ResizeMode="CanResizeWithGrip"
+        Background="Transparent"
+        Title="Main Menu" Height="1000" Width="720">
+    <Grid Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="301*"/>
+            <RowDefinition Height="0*"/>
+            <RowDefinition Height="195*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="43*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="46*"/>
+            <ColumnDefinition Width="46*"/>
+            <ColumnDefinition Width="221*"/>
+        </Grid.ColumnDefinitions>
+        <Border CornerRadius="100" Grid.ColumnSpan="17" Grid.RowSpan="3" >
+            <Border.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="cyan" Offset="1"/>
+                    <GradientStop Color="LightCoral" Offset="0.163"/>
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
+        <TextBlock HorizontalAlignment="Left" Margin="74,183,0,0" TextWrapping="Wrap" Text="FERTILIZER MANAGEMENT SYSTEM" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="42" Width="585" FontSize="36" FontFamily="Franklin Gothic Heavy" Foreground="#FF362501" TextDecorations="{x:Null}" Grid.ColumnSpan="17">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.282"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <Button x:Name="AddProductBTN" Content="Add New Product"  Margin="30,343,0,0" Width="269" Height="58" FontSize="20" BorderBrush="#FF2D4F97" BorderThickness="3" Background="#FFAFCDF1" Foreground="#FF002E70" VerticalAlignment="Top" HorizontalAlignment="Left" Click="Button_Click_1" Grid.Column="4" Grid.ColumnSpan="13"/>
+        <Button x:Name="BuyItemsBTN" Content="Make New Purchase" Margin="32,450,0,0" Width="269" Height="58" FontSize="20" BorderBrush="#FF2D4F97" BorderThickness="3" Background="#FFAFCDF1" Foreground="#FF002E70" Click="Button_Click_1" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Column="4" Grid.ColumnSpan="13"/>
+        <Button Content="Purchase Return" Margin="33,563,0,0" Width="269" Height="58" FontSize="20" BorderBrush="#FF2D4F97" BorderThickness="3" Background="#FFAFCDF1" Foreground="#FF002E70" VerticalAlignment="Top" HorizontalAlignment="Left" Click="Button_Click_4" Grid.Column="4" Grid.RowSpan="3" Grid.ColumnSpan="13"/>
+        <Button x:Name="QuitBTN" Content="Quit" Margin="86,191,0,0" Width="164" Height="60" FontSize="20" BorderBrush="#FF2D4F97" BorderThickness="3" Background="#FF00B9A0" Foreground="#FF002E70" Cursor="" Click="Button_Click_2" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Column="4" Grid.Row="1" Grid.RowSpan="2" Grid.ColumnSpan="13"/>
+        <Button x:Name="ReturnProductBTN" Content="Purchase Return" Margin="33,563,0,0" Width="269" Height="58" FontSize="20" BorderBrush="#FF2D4F97" BorderThickness="3" Background="#FFAFCDF1" Foreground="#FF002E70" VerticalAlignment="Top" HorizontalAlignment="Left" Click="Button_Click_4" Grid.Column="4" Grid.RowSpan="3" Grid.ColumnSpan="13"/>
+        <Button x:Name="ViewProductBTN" Content="View Products" Margin="33,69,0,0" Width="269" Height="58" FontSize="20" BorderBrush="#FF2D4F97" BorderThickness="3" Background="#FFAFCDF1" Foreground="#FF002E70" VerticalAlignment="Top" HorizontalAlignment="Left" Click="Button_Click_4" Grid.Column="4" Grid.Row="1" Grid.RowSpan="2" Grid.ColumnSpan="13"/>
+
+    </Grid>
+</Window>

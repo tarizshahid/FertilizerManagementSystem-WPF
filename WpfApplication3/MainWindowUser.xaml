@@ -1,0 +1,15 @@
+﻿<Window x:Class="WpfApplication3.MainWindowUser"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication3"
+        mc:Ignorable="d"
+        Title="MainWindowUser" Height="600" Width="800">
+    <Grid Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}">
+        <Button x:Name="QuitBTNusr" Content="Quit" Margin="308,399,0,0" Width="164" Height="60" FontSize="20" BorderBrush="#FF2D4F97" BorderThickness="3" Background="#FFF77070" Foreground="#FF002E70" Cursor="" Click="Button_Click_2" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <Button x:Name="ViewProductBTNusr" Content="View Products" Margin="251,144,0,0" Width="269" Height="58" FontSize="20" BorderBrush="#FF2D4F97" BorderThickness="3" Background="#FFAFCDF1" Foreground="#FF002E70" VerticalAlignment="Top" HorizontalAlignment="Left" Click="Button_Click_4"/>
+        <Button x:Name="BuyItemsBTNusr" Content="Make New Purchase" Margin="251,253,0,0" Width="269" Height="58" FontSize="20" BorderBrush="#FF2D4F97" BorderThickness="3" Background="#FFAFCDF1" Foreground="#FF002E70" Click="Button_Click_1" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <Label x:Name="label" Content="USER DASHBOARD" HorizontalAlignment="Left" Margin="264,46,0,0" VerticalAlignment="Top" Height="44" Width="247" FontSize="24" FontFamily="Modern No. 20" FontWeight="Bold"/>
+    </Grid>
+</Window>

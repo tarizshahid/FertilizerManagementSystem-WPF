@@ -1,0 +1,18 @@
+﻿<Window x:Class="WpfApplication3.Window5"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Purchase Return" Height="500" Width="700">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF093B64" Offset="1"/>
+                <GradientStop Color="#FF2C7ABB"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Button Content="View Products" Margin="271,368,0,0" Width="143" Height="36" FontSize="20" BorderBrush="#FF2D4F97" BorderThickness="3" Background="#FFAFCDF1" Foreground="#FF002E70" VerticalAlignment="Top" HorizontalAlignment="Left" Click="Button_Click_3" RenderTransformOrigin="0.657,1.667"/>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="257" Margin="10,79,0,0" VerticalAlignment="Top" Width="672"/>
+        <Label x:Name="label" Content="Products" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="271,32,0,0" Width="129" FontSize="24" FontFamily="Segoe UI Black"/>
+        <Label x:Name="label1" Content="" HorizontalAlignment="Left" Margin="272,419,0,0" VerticalAlignment="Top" Width="142"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfApplication3.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication3"
+        mc:Ignorable="d"
+        Title="Login" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <RadialGradientBrush>
+                <GradientStop Color="#FF6C0303" Offset="1"/>
+                <GradientStop Color="#FFFF7400" Offset="0.46"/>
+            </RadialGradientBrush>
+        </Grid.Background>
+        <Label x:Name="label" Content="Username" HorizontalAlignment="Left" Margin="151,133,0,0" VerticalAlignment="Top" Height="51" Width="110" FontSize="20" FontFamily="Yu Gothic UI Semibold"/>
+        <Label x:Name="label_Copy" Content="Password" HorizontalAlignment="Left" Margin="151,206,0,0" VerticalAlignment="Top" Height="46" Width="96" FontSize="20" FontFamily="Yu Gothic UI Semibold"/>
+        <TextBox x:Name="UserNametxt"  Cursor="IBeam" HorizontalAlignment="Left" Height="29" Margin="292,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="216" TextChanged="textBox_TextChanged" FontSize="16"/>
+        <Button x:Name="button"  Content="LOG IN" HorizontalAlignment="Left" Margin="328,287,0,0" VerticalAlignment="Top" Width="127" Height="43" BorderBrush="#FF0E0000" Click="button_Click" Background="#FFB81F1F" FontFamily="Yu Gothic UI Semibold" FontSize="16"/>
+        <PasswordBox x:Name="PasswordTxt" Cursor="IBeam" HorizontalAlignment="Left" Margin="292,216,0,0" VerticalAlignment="Top" Width="216" Height="27" FontSize="16"/>
+
+    </Grid>
+</Window>
